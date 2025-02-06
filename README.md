@@ -13,15 +13,11 @@ To control for differing article volume and coverage over time and newspaper, Ba
 - \( n \) = number of newspapers
 - \( \sigma \) = unit standard deviation
 
-\[
-\begin{gathered}
-X_{i t}=\frac{\text { epu count }_{i t}}{\text { total }_{i t}} ; \\
-Y_{i t}=\frac{X_{i t}}{\sigma_{i}} ; \\
-Z_{t}=\frac{\sum_{i}^{n} Y_{i t}}{n} ; \\
-M=\text { Average } Z_{t} \text { over } T ; \\
-\text { EPU}_{t}=\frac{Z_{t}}{M}
-\end{gathered}
-\]
-
+```plaintext
+X_{it} = (epu count_{it}) / (total_{it})
+Y_{it} = X_{it} / σ_{i}
+Z_{t} = (∑ Y_{it} from i=1 to n) / n
+M = Average Z_{t} over T
+EPU_{t} = Z_{t} / M
 ---
 
